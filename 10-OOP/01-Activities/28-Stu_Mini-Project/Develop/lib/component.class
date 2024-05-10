@@ -1,0 +1,23 @@
+class component {
+    constructor(children =[]){
+        this.children = children;
+    }
+    render() {
+        throw Error(`Child class must implement render() method.`)
+
+    }
+
+renderInnerHTML() {
+    return this.children.map(children => {
+        if(typeof children === 'string'){
+            return children;
+        }else   {
+            return children.render ();
+        }
+    }
+    
+    
+    )
+}
+
+}

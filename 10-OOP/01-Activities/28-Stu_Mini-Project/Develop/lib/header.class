@@ -1,0 +1,8 @@
+class header extends component {
+    render(){
+        const currentDate = newdate
+    return `<header class="header"><h1>Todo Today</
+
+    }
+    
+}
